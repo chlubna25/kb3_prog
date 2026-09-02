@@ -87,7 +87,7 @@ Tímto nastavení můžeš stahovat změny z učitelského repozitáře do svéh
  ## Verze pro Visual Studio 2019
  Tento návod funguje, jen pokud v rámci repa vytvoříte VS 2019 projekt.
 1. **Přihlášení**
-   - v aplikaci Visual Studio přejdi na *Soubor* a *Nastavení účtů...*
+   - v aplikaci Visual Studio stáhni *GitHub pull request*
    - přihlaš se na GitHub
 2. **Na začátku hodiny**
    - najeď na stránku svého repozitáře (např. https://github.com/*jmeno*/kb3_prog/)
