@@ -13,7 +13,7 @@ Tento README slouží jako ukázka (a návod) k využití gitu.
 Tento repozitář je nastavený jako *read-only*. Pro možnost úprav si budete muset vytvořit vlastní verzi repozitáře - tzv. *fork*.
 1. Na stránce tohoto repozitáře klikni vpravo nahoře na tlačítko **Fork**.
 2. Vytvoří se **kopie repozitáře** pod tvým účtem:
-   https://github.com/*tvoje-jmeno*/kb3a_prog
+   https://github.com/*tvoje-jmeno*/kb3_prog
 
 ## 2. Klonování forku do VS Code (první použití)
 1. Otevři **VS Code** a stáhní rozšíření **GitHub Pull Requests**.
@@ -45,7 +45,7 @@ git pull origin main
 Tímto nastavení můžeš stahovat změny z učitelského repozitáře do svého repozitáře
 1. Zadej příkaz:
 ```bash
-  git remote add upstream https://github.com/chlubna25/kb3a_prog
+  git remote add upstream https://github.com/chlubna25/kb3_prog
 ```
 2. Změny z učitelského repa lze stáhnout pomocí:
 ```bash
@@ -90,7 +90,7 @@ Tímto nastavení můžeš stahovat změny z učitelského repozitáře do svéh
    - v aplikaci Visual Studio přejdi na *Soubor* a *Nastavení účtů...*
    - přihlaš se na GitHub
 2. **Na začátku hodiny**
-   - najeď na stránku svého repozitáře (např. https://github.com/*jmeno*/kb3a_prog/)
+   - najeď na stránku svého repozitáře (např. https://github.com/*jmeno*/kb3_prog/)
       - pokud se zobrazuje tlačítko *Sync fork*, načti změny od učitelského repozitáře
    - ve VS přejdi na *git* -> *klonovat úložiště* a vyber svůj repozitář
       - případně pullni změny 
