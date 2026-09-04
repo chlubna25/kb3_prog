@@ -1,0 +1,267 @@
+/* -------------------------------------------------
+   ZÁKLAD STRÁNKY
+   ------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #f4f6f8;
+    line-height: 1.6;
+}
+
+.site-header {
+    background-color: rgb(20, 160, 175);
+    color: white;
+    text-align: center;
+    padding: 32px 20px;
+}
+
+.site-header h1 {
+    margin: 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+    background-color: #1d2935;
+    padding: 12px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+
+/* -------------------------------------------------
+   ROZLOŽENÍ
+   ------------------------------------------------- */
+
+.page-layout {
+    display: flex;
+    gap: 24px;
+
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+main {
+    flex: 1;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: white;
+    border: 1px solid #d7dde3;
+    padding: 20px;
+}
+
+
+/* -------------------------------------------------
+   SEKCE
+   ------------------------------------------------- */
+
+.section {
+    background-color: white;
+    padding: 24px;
+    margin-bottom: 20px;
+    border: 1px solid #d7dde3;
+}
+
+.alternate {
+    background-color: #eef8f8;
+}
+
+
+/* -------------------------------------------------
+   TEXT
+   ------------------------------------------------- */
+
+.large-text {
+    font-size: 24px;
+}
+
+.different-font {
+    font-family: Georgia, serif;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.muted-text {
+    color: gray;
+}
+
+
+/* -------------------------------------------------
+   BARVY
+   ------------------------------------------------- */
+
+.color-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.color-box {
+    width: 120px;
+    padding: 20px 10px;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.color-name {
+    background-color: blue;
+}
+
+.color-rgb {
+    background-color: rgb(151, 70, 70);
+}
+
+.color-hex {
+    background-color: #2f8f4e;
+}
+
+
+/* -------------------------------------------------
+   BOXOVÝ MODEL
+   ------------------------------------------------- */
+
+.box-example {
+    width: 250px;
+
+    margin: 30px;
+    border: 8px solid #293b5f;
+    padding: 24px;
+
+    background-color: #7fd1d6;
+}
+
+.box-content {
+    background-color: #ffd27f;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* -------------------------------------------------
+   FLEXBOX A TŘÍDY
+   ------------------------------------------------- */
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.card {
+    flex: 1;
+    min-width: 150px;
+
+    background-color: white;
+    border: 1px solid #c7ced6;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.featured-card {
+    border: 3px solid #14a0af;
+}
+
+
+/* -------------------------------------------------
+   DÉLKY A HOVER
+   ------------------------------------------------- */
+
+.fixed-width,
+.relative-width {
+    background-color: #e2e8ef;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.fixed-width {
+    width: 250px;
+}
+
+.relative-width {
+    width: 70%;
+}
+
+.demo-button {
+    margin-top: 18px;
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 6px;
+
+    background-color: #1d2935;
+    color: white;
+    cursor: pointer;
+
+    transition: transform 0.2s;
+}
+
+.demo-button:hover {
+    transform: scale(1.08);
+}
+
+
+/* -------------------------------------------------
+   ID – UNIKÁTNÍ PRVEK
+   ------------------------------------------------- */
+
+#unique-note {
+    margin-top: 24px;
+    padding: 12px;
+    border: 3px solid black;
+    background-color: #fff3c4;
+}
+
+
+/* -------------------------------------------------
+   FOOTER
+   ------------------------------------------------- */
+
+.site-footer {
+    background-color: #1d2935;
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+
+
+/* -------------------------------------------------
+   JEDNODUCHÁ RESPONSIVITA
+   ------------------------------------------------- */
+
+@media (max-width: 750px) {
+    .page-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: auto;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .navigation {
+        flex-wrap: wrap;
+    }
+}

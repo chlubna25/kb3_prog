@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ukázka CSS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>Ukázka možností CSS</h1>
+        <p>Jednoduchá stránka pro předvedení základních vlastností CSS.</p>
+    </header>
+
+    <nav class="navigation">
+        <a href="#text">Text</a>
+        <a href="#colors">Barvy</a>
+        <a href="#box-model">Boxový model</a>
+        <a href="#flexbox">Flexbox</a>
+    </nav>
+
+    <div class="page-layout">
+        <main>
+            <section id="text" class="section">
+                <h2>1. Text</h2>
+
+                <p class="large-text">Tento text má větší velikost.</p>
+                <p class="different-font">Tento text používá jiný font.</p>
+                <p class="centered-text">Tento text je zarovnaný na střed.</p>
+                <p class="muted-text">Tento text má změněnou barvu.</p>
+            </section>
+
+            <section id="colors" class="section alternate">
+                <h2>2. Barvy</h2>
+                <p>Barvy lze v CSS zapisovat například názvem, pomocí RGB nebo HEX kódu.</p>
+
+                <div class="color-row">
+                    <div class="color-box color-name">blue</div>
+                    <div class="color-box color-rgb">rgb()</div>
+                    <div class="color-box color-hex">#hex</div>
+                </div>
+            </section>
+
+            <section id="box-model" class="section">
+                <h2>3. Boxový model</h2>
+                <p>Každý prvek může mít obsah, padding, border a margin.</p>
+
+                <div class="box-example">
+                    <div class="box-content">Obsah</div>
+                </div>
+            </section>
+
+            <section id="flexbox" class="section alternate">
+                <h2>4. Flexbox</h2>
+                <p>Pomocí <code>display: flex</code> lze jednoduše rozmístit prvky vedle sebe.</p>
+
+                <div class="cards">
+                    <article class="card">
+                        <h3>Karta 1</h3>
+                        <p>První jednoduchý box.</p>
+                    </article>
+
+                    <article class="card featured-card">
+                        <h3>Karta 2</h3>
+                        <p>Tato karta má navíc vlastní třídu.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Karta 3</h3>
+                        <p>Třetí jednoduchý box.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>5. Délky a jednoduchý dynamický prvek</h2>
+
+                <div class="fixed-width">Šířka 250 px</div>
+                <div class="relative-width">Šířka 70 %</div>
+
+                <button class="demo-button">Najeď na mě myší</button>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <h2>Co stránka ukazuje?</h2>
+            <ul>
+                <li>barvy</li>
+                <li>fonty a velikost textu</li>
+                <li>zarovnání</li>
+                <li>margin a padding</li>
+                <li>border</li>
+                <li>šířku v px a %</li>
+                <li>flexbox</li>
+                <li>class a id</li>
+            </ul>
+
+            <p id="unique-note">
+                Tento box používá unikátní <strong>id</strong>.
+            </p>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <p>Jednoduchá ukázková stránka k úvodu do CSS.</p>
+    </footer>
+
+</body>
+</html>
